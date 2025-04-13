@@ -1,12 +1,12 @@
 import React from "react";
-import MyResume from "../assets/kpresume6.pdf";
+import MyResume from "../assets/kishan_pal_resume.pdf";
 import HighlightText from "../assets/components/HighlightText";
 
 const Resume = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-[var(--background-color)]">
-      <h1 className="text-3xl font-semibold mb-6 text-[var(--imp-text-color)]">
-        My Resume
+      <h1 className="text-3xl font-semibold mb-6 text-white">
+        My <HighlightText>Profile</HighlightText>
       </h1>
 
       {/* PDF Viewer */}
@@ -23,7 +23,7 @@ const Resume = () => {
           download
           className="px-6 py-2 bg-[var(--imp-text-color)] text-white font-medium rounded hover:scale-105 transition duration-200 ease-in-out"
         >
-          Download Resume
+          Download
         </a>
         <p className="text-white">
           Resume isn't visible? Click here for{" "}
