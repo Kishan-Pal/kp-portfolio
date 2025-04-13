@@ -1,9 +1,13 @@
 import React from "react";
+import { useEffect } from "react";
 import homeLogo from "../assets/images/home-main.svg";
 import HighlightText from "../assets/components/HighlightText";
 import KishanPal from "../assets/images/kishanpal3.jpg";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="my-10 mx-20 max-md:mx-[10%]">
       <div className="flex w-full h-fit  max-sm:flex-col-reverse">

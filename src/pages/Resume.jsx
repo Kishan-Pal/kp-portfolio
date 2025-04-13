@@ -1,8 +1,12 @@
 import React from "react";
+import { useEffect } from "react";
 import MyResume from "../assets/kishan_pal_resume.pdf";
 import HighlightText from "../assets/components/HighlightText";
 
 const Resume = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-[var(--background-color)]">
       <h1 className="text-3xl font-semibold mb-6 text-white">

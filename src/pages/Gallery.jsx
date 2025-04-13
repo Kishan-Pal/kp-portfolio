@@ -77,6 +77,7 @@ const Gallery = () => {
 
   useEffect(() => {
     setShuffledImages(shuffleArray(images));
+    window.scrollTo(0, 0);
   }, []);
 
   return (

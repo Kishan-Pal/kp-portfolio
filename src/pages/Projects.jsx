@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import HighlightText from "../assets/components/HighlightText";
 import ProjectCard from "../assets/components/ProjectCard";
 import VendOPrint from "../assets/images/vendoprint.jpg";
@@ -7,6 +8,9 @@ import Eventus from "../assets/images/eventus.jpg";
 import Cybershield from "../assets/images/cybershield.jpg";
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-15 max-sm:my-5">
       <div className="text-center text-white text-4xl max-md:text-2xl">

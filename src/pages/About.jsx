@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import HighlightText from "../assets/components/HighlightText";
 import aboutLogo from "../assets/images/about.png";
 import SkillCard from "../assets/components/SkillCard";
@@ -25,6 +26,9 @@ const About = () => {
     "https://www.primarymarkets.com/wp-content/uploads/2024/07/Postman-Circle-Logo.png",
     "https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg",
   ]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-15 max-sm:my-5">
       <div className="flex w-full h-fit justify-between">

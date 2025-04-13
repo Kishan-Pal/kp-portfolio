@@ -53,6 +53,7 @@ html {
 html {
   scrollbar-color: rgba(170, 113, 216, 0.8) rgba(24, 9, 68, 0.8); /* Thumb and track colors */
   scrollbar-width: thin; /* Thin scrollbar */
+  scroll-behavior: smooth;
 }
 
 .no-scroll {
