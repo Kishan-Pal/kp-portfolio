@@ -1,0 +1,60 @@
+@import "tailwindcss";
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 11, 41, 0.955),
+    rgba(21, 5, 24, 0.844)
+  );
+
+  --imp-text-color: #ff60e4d7;
+  --navbar-background-color: rgb(93, 41, 93);
+  --navbar-text-hover-color: rgb(218, 146, 246);
+}
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: var(--image-gradient), url(./assets/images/bg-image.jpg);
+  background-repeat: repeat-y;
+  background-size: cover; /* or 'auto' depending on your needs */
+  background-attachment: fixed; /* optional: makes it scroll with a parallax effect */
+  width: 100%;
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(24, 9, 68, 0.8); /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 0, 128, 0.8); /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 0, 128, 1); /* Darker color on hover */
+}
+
+/* For Firefox */
+html {
+  scrollbar-color: rgba(170, 113, 216, 0.8) rgba(24, 9, 68, 0.8); /* Thumb and track colors */
+  scrollbar-width: thin; /* Thin scrollbar */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
