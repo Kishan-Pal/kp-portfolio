@@ -58,7 +58,7 @@ const About = () => {
       </div>
       <div className="w-[70%] h-fit">
         <div className="text-3xl text-white max-md:text-2xl  ml-[50px] max-md:ml-0 ">
-          I also <HighlightText>Like</HighlightText>
+          I Also <HighlightText>Like</HighlightText>
         </div>
         <ul className="text-xl text-white mt-5 space-y-3 max-md:text-lg max-sm:text-md">
           <li className="flex items-center gap-3 ">

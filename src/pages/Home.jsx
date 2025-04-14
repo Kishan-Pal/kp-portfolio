@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import homeLogo from "../assets/images/home-main.svg";
 import HighlightText from "../assets/components/HighlightText";
-import KishanPal from "../assets/images/kishanpal3.jpg";
+import KishanPal from "../assets/images/kishanpal4.jpg";
 
 const Home = () => {
   useEffect(() => {
