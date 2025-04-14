@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="my-10 mx-20 max-md:mx-[10%]">
       <div className="flex w-full h-fit  max-sm:flex-col-reverse">
-        <div className="w-[50%]  p-30 text-[50px] text-white my-auto max-sm:w-full  max-sm:p-0 max-md:p-5 max-md:py-20 md:p-5 md:py-20 max-md:text-[25px] max-lg:text-[35px]">
+        <div className="w-[50%]  p-30 text-[50px] text-white my-auto max-sm:w-full  max-sm:p-0 max-md:p-5 max-md:py-20 md:p-5 md:py-20 max-md:text-[40px] max-lg:text-[35px]">
           <p>Hi there!</p>
           <p>
             I'm <HighlightText> Kishan Pal H </HighlightText>
@@ -27,31 +27,44 @@ const Home = () => {
       </div>
       <div className="flex w-full h-fit py-10 max-md:mt-3">
         <div className="w-[70%] max-md:w-full ">
-          <div className="w-full text-center text-4xl py-5 text-white max-md:text-[20px]">
-            Some Facts About Me
+          <div className="w-full text-center text-4xl py-5 text-white max-md:text-[30px]">
+            Some <HighlightText>Facts</HighlightText> About Me
           </div>
-          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-[20px] max-md:text-[15px]">
+          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-[20px] max-md:text-[20px]">
             <ul className="list-none flex flex-col gap-6 ">
-              <li>
-                💻 I unexpectedly fell in love with{" "}
-                <HighlightText>Programming</HighlightText> and have never looked
-                back since.
+              <li className="flex gap-1">
+                <span>💻</span>{" "}
+                <span>
+                  I unexpectedly fell in love with{" "}
+                  <HighlightText>Programming</HighlightText> and have never
+                  looked back since.
+                </span>
               </li>
-              <li>
-                🧠 I'm fluent in{" "}
-                <HighlightText>JavaScript, Java, and Python</HighlightText> — my
-                go-to tools for building and problem-solving.
+              <li className="flex gap-1">
+                <span>🧠</span>{" "}
+                <span>
+                  {" "}
+                  I'm fluent in{" "}
+                  <HighlightText>JavaScript, Java, and Python</HighlightText> —
+                  my go-to tools for building and problem-solving.
+                </span>
               </li>
-              <li>
-                🌐 My interests lie in{" "}
-                <HighlightText>web technologies</HighlightText> and product
-                development, with a growing curiosity in{" "}
-                <HighlightText>machine learning</HighlightText>.
+              <li className="flex gap-1">
+                <span>🌐</span>
+                <span>
+                  My interests lie in{" "}
+                  <HighlightText>web technologies</HighlightText> and product
+                  development, with a growing curiosity in{" "}
+                  <HighlightText>machine learning</HighlightText>.
+                </span>
               </li>
-              <li>
-                ⚡ I enjoy <HighlightText>fast typing</HighlightText>,{" "}
-                <HighlightText>competitive programming</HighlightText>, and
-                challenging myself through code.
+              <li className="flex gap-1">
+                <span>⚡</span>
+                <span>
+                  I enjoy <HighlightText>fast typing</HighlightText>,{" "}
+                  <HighlightText>competitive programming</HighlightText>, and
+                  challenging myself through code.
+                </span>
               </li>
             </ul>
           </div>

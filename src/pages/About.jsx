@@ -33,10 +33,10 @@ const About = () => {
     <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-15 max-sm:my-5">
       <div className="flex w-full h-fit justify-between">
         <div className="w-[60%] max-sm:w-full ">
-          <div className="w-full t text-4xl py-5 text-white max-md:text-2xl">
+          <div className="w-full t text-4xl py-5 text-white max-md:text-3xl">
             Peek Into <HighlightText>My</HighlightText> Story
           </div>
-          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-[20px] max-md:text-[15px]">
+          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-[20px] max-md:text-md">
             <p className="text-justify ">
               Hello there! I'm <HighlightText>Kishan Pal H</HighlightText> from{" "}
               <HighlightText>Bangalore</HighlightText>, India. <br></br>I am
@@ -57,7 +57,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-[70%] h-fit">
-        <div className="text-3xl text-white max-md:text-2xl  ml-[50px] max-md:ml-0 ">
+        <div className="text-3xl text-white max-md:text-2xl  ml-2xl max-md:ml-0 ">
           I Also <HighlightText>Like</HighlightText>
         </div>
         <ul className="text-xl text-white mt-5 space-y-3 max-md:text-lg max-sm:text-md">
@@ -85,7 +85,7 @@ const About = () => {
       </div>
 
       <div className="w-full h-fit">
-        <div className="text-4xl text-white text-center max-md:text-2xl">
+        <div className="text-4xl text-white text-center max-md:text-3xl">
           Professional <HighlightText>SkillSet</HighlightText>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-0 mt-10">
@@ -95,7 +95,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full h-fit">
-        <div className="text-4xl text-white text-center max-md:text-2xl">
+        <div className="text-4xl text-white text-center max-md:text-3xl">
           <HighlightText>Tools</HighlightText> I use
         </div>
         <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-0 mt-10">
@@ -105,7 +105,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full h-fit">
-        <div className="text-4xl text-white text-center max-md:text-2xl">
+        <div className="text-4xl text-white text-center max-md:text-3xl">
           My <HighlightText>Achievements</HighlightText>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-5 mt-10">

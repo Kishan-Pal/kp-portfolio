@@ -13,10 +13,10 @@ const Projects = () => {
   }, []);
   return (
     <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-15 max-sm:my-5">
-      <div className="text-center text-white text-4xl max-md:text-2xl">
+      <div className="text-center text-white text-4xl max-md:text-3xl">
         My <HighlightText>Projects</HighlightText>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-5 mt-10">
+      <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-5 mt-10 max-sm:mt-3">
         <ProjectCard
           title={"CYBERSHIELD"}
           image={Cybershield}
