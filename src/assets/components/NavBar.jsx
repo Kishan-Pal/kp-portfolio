@@ -137,7 +137,13 @@ const NavBar = () => {
       {isMobileMenuOpen && (
         <div
           ref={menuRef}
-          className="md:hidden shadow-md flex flex-col gap-4 py-4 px-6  text-white"
+          className={`md:hidden overflow-hidden transition-all duration-1000 ease-in-out 
+          ${
+            isMobileMenuOpen
+              ? "max-h-screen opacity-100 py-4 px-6"
+              : "max-h-0 opacity-0 px-6"
+          }
+          shadow-md flex flex-col gap-4 text-white`}
         >
           {navLinks.map((link) => (
             <Link
