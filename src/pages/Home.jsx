@@ -9,7 +9,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="my-10 mx-20 max-md:mx-[10%]">
+    <div className="my-10 mx-20 max-md:mx-[5%]">
       <div className="flex w-full h-fit  max-sm:flex-col-reverse">
         <div className="w-[50%]  p-30 text-[50px] text-white my-auto max-sm:w-full  max-sm:p-0 max-md:p-5 max-md:py-20 md:p-5 md:py-20 max-md:text-[40px] max-lg:text-[35px]">
           <p>Hi there!</p>
@@ -34,7 +34,7 @@ const Home = () => {
             <ul className="list-none flex flex-col gap-6 ">
               <li className="flex gap-1">
                 <span>💻</span>{" "}
-                <span>
+                <span className="text-justify">
                   I unexpectedly fell in love with{" "}
                   <HighlightText>Programming</HighlightText> and have never
                   looked back since.
@@ -42,28 +42,29 @@ const Home = () => {
               </li>
               <li className="flex gap-1">
                 <span>🧠</span>{" "}
-                <span>
-                  {" "}
-                  I'm fluent in{" "}
-                  <HighlightText>JavaScript, Java, and Python</HighlightText> —
-                  my go-to tools for building and problem-solving.
+                <span className="text-justify">
+                  I'm fluent in <HighlightText>JavaScript</HighlightText> ,{" "}
+                  <HighlightText>Java</HighlightText>, and{" "}
+                  <HighlightText>Python</HighlightText> — my go-to tools for
+                  building and problem-solving.
                 </span>
               </li>
               <li className="flex gap-1">
                 <span>🌐</span>
-                <span>
+                <span className="text-justify">
                   My interests lie in{" "}
-                  <HighlightText>web technologies</HighlightText> and product
+                  <HighlightText>Web Technologies</HighlightText> and product
                   development, with a growing curiosity in{" "}
-                  <HighlightText>machine learning</HighlightText>.
+                  <HighlightText>Machine Learning</HighlightText>.
                 </span>
               </li>
               <li className="flex gap-1">
                 <span>⚡</span>
-                <span>
-                  I enjoy <HighlightText>fast typing</HighlightText>,{" "}
-                  <HighlightText>competitive programming</HighlightText>, and
-                  challenging myself through code.
+                <span className="text-justify">
+                  <HighlightText></HighlightText>I enjoy{" "}
+                  <HighlightText>Competitive Programming</HighlightText>,{" "}
+                  <HighlightText>Fast-Typing</HighlightText>, and challenging
+                  myself through code.
                 </span>
               </li>
             </ul>

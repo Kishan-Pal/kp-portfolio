@@ -30,7 +30,7 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-15 max-sm:my-5">
+    <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-[5%] max-sm:my-5 max-sm:text-center">
       <div className="flex w-full h-fit justify-between">
         <div className="w-[60%] max-sm:w-full ">
           <div className="w-full t text-4xl py-5 text-white max-md:text-3xl">
@@ -56,11 +56,11 @@ const About = () => {
           <img src={aboutLogo} alt="About Me" className="w-full h-auto" />
         </div>
       </div>
-      <div className="w-[70%] h-fit">
-        <div className="text-3xl text-white max-md:text-2xl  ml-2xl max-md:ml-0 ">
+      <div className="w-[70%] h-fit max-sm:w-full">
+        <div className="text-3xl text-white max-md:text-3xl  ml-2xl max-md:ml-0 max-sm:mx-auto">
           I Also <HighlightText>Like</HighlightText>
         </div>
-        <ul className="text-xl text-white mt-5 space-y-3 max-md:text-lg max-sm:text-md">
+        <ul className="text-xl text-white mt-10 space-y-3 max-md:text-lg max-sm:text-md">
           <li className="flex items-center gap-3 ">
             <span>🎵</span>
             <span>Listening to Music</span>
