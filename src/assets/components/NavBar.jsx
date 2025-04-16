@@ -79,7 +79,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 px-10 transition-colors duration-300 ${
+      className={`fixed top-0 w-full z-50 px-10 transition-all duration-100 ${
         navColour || isMobileMenuOpen
           ? "bg-[var(--navbar-background-color)]/10 backdrop-blur-md shadow-md"
           : ""
@@ -134,44 +134,43 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div
-          ref={menuRef}
-          className={`md:hidden overflow-hidden transition-all duration-1000 ease-in-out 
+
+      <div
+        ref={menuRef}
+        className={`md:hidden overflow-hidden transition-all duration-100 ease-in-out 
           ${
             isMobileMenuOpen
               ? "max-h-screen opacity-100 py-4 px-6"
-              : "max-h-0 opacity-0 px-6"
+              : "hidden max-h-0 opacity-0 px-6"
           }
           shadow-md flex flex-col gap-4 text-white`}
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className={`flex items-center gap-2 ${
-                isActive(link.to)
-                  ? "text-[var(--navbar-text-hover-color)]"
-                  : "text-white"
-              }`}
-            >
-              {link.icon} {link.label}
-            </Link>
-          ))}
+      >
+        {navLinks.map((link) => (
+          <Link
+            key={link.to}
+            to={link.to}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`flex items-center gap-2 ${
+              isActive(link.to)
+                ? "text-[var(--navbar-text-hover-color)]"
+                : "text-white"
+            }`}
+          >
+            {link.icon} {link.label}
+          </Link>
+        ))}
 
-          <div className="flex gap-4 mt-2">
-            <a
-              href="https://github.com/Kishan-Pal/kp-portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-[var(--navbar-text-hover-color)]"
-            >
-              <CgGitFork /> Fork
-            </a>
-          </div>
+        <div className="flex gap-4 mt-2">
+          <a
+            href="https://github.com/Kishan-Pal/kp-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 hover:text-[var(--navbar-text-hover-color)]"
+          >
+            <CgGitFork /> Fork
+          </a>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

@@ -30,7 +30,7 @@ const Home = () => {
           <div className="w-full text-center text-4xl py-5 text-white max-md:text-[30px]">
             Some <HighlightText>Facts</HighlightText> About Me
           </div>
-          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-[20px] max-md:text-[20px]">
+          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-xl max-md:text-[17px]">
             <ul className="list-none flex flex-col gap-6 ">
               <li className="flex gap-1">
                 <span>💻</span>{" "}

@@ -30,25 +30,31 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-[5%] max-sm:my-5 max-sm:text-center">
+    <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-[5%] max-sm:my-0 max-sm:text-center">
       <div className="flex w-full h-fit justify-between">
         <div className="w-[60%] max-sm:w-full ">
           <div className="w-full t text-4xl py-5 text-white max-md:text-3xl">
             Peek Into <HighlightText>My</HighlightText> Story
           </div>
-          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-[20px] max-md:text-md">
-            <p className="text-justify ">
-              Hello there! I'm <HighlightText>Kishan Pal H</HighlightText> from{" "}
-              <HighlightText>Bangalore</HighlightText>, India. <br></br>I am
-              currently pursuing my B.E. in{" "}
-              <HighlightText>Computer Science</HighlightText> and Engineering at{" "}
-              <HighlightText>RNSIT</HighlightText>, Bangalore.<br></br>I am a
-              passionate and dedicated software developer with a strong
-              foundation in computer science. I have a keen interest in web
-              technologies and product development, and I am always eager to
-              learn new skills and technologies. My goal is to create innovative
-              and efficient solutions that make a positive impact on users'
-              lives.
+          <div className="w-full h-fit mt-10 max-md:mt-5 text-white text-[20px] max-md:text-[17px]">
+            <p className="flex flex-col gap-2 text-justify ">
+              <span>
+                Hello there! I'm <HighlightText>Kishan Pal H</HighlightText>{" "}
+                from <HighlightText>Bangalore</HighlightText>, India.
+              </span>
+              <span>
+                I am currently pursuing my B.E. in{" "}
+                <HighlightText>Computer Science</HighlightText> and Engineering
+                at <HighlightText>RNSIT</HighlightText>, Bangalore.
+              </span>
+              <span>
+                I am a passionate and dedicated software developer with a strong
+                foundation in computer science. I have a keen interest in web
+                technologies and product development, and I am always eager to
+                learn new skills and technologies. My goal is to create
+                innovative and efficient solutions that make a positive impact
+                on users' lives.
+              </span>
             </p>
           </div>
         </div>

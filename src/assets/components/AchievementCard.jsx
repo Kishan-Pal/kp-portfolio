@@ -11,7 +11,7 @@ const AchievementCard = ({ children, title, image }) => {
         alt="Project"
         className="w-full mt-3 object-contain rounded-md"
       />
-      <div className="text-white  mt-2 text-xl text-center max-sm:text-md">
+      <div className="text-white  mt-2 text-lg text-center max-sm:text-md">
         {children}
       </div>
     </div>
