@@ -12,7 +12,7 @@ const Projects = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-15 max-sm:my-5">
+    <div className="flex flex-col gap-7 mx-20 my-10 max-sm:mx-15 max-sm:my-10">
       <div className="text-center text-white text-4xl max-md:text-3xl">
         My <HighlightText>Projects</HighlightText>
       </div>

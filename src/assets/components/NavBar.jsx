@@ -79,7 +79,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 px-10 transition-all duration-100 ${
+      className={`fixed top-0 w-full z-50 px-10 transition-all duration-100  ${
         navColour || isMobileMenuOpen
           ? "bg-[var(--navbar-background-color)]/10 backdrop-blur-md shadow-md"
           : ""

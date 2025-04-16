@@ -11,7 +11,7 @@ const Resume = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col  min-h-screen gap-6 p-8 bg-[var(--background-color)] max-md:p-6">
+    <div className="flex flex-col  min-h-screen gap-6 px-8 py-8 bg-[var(--background-color)] max-md:px-6 max-md:py-6">
       <h1 className="text-3xl font-semibold text-center text-white">
         My <HighlightText>Profile</HighlightText>
       </h1>

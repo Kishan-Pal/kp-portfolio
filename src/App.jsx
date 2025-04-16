@@ -22,7 +22,7 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <div className="pt-20">
+        <div className="pt-20 max-md:pt-10">
           {" "}
           {/* Add padding here */}
           <Routes>

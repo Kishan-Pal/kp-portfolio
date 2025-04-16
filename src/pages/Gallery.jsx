@@ -81,7 +81,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="p-4 min-h-screen ">
+    <div className="p-8 min-h-screen max-md:p-6">
       <h1 className="text-3xl font-bold text-center text-white mb-6">
         Randomized <HighlightText>Memories</HighlightText>
       </h1>

@@ -30,7 +30,7 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-[5%] max-sm:my-0 max-sm:text-center">
+    <div className="flex flex-col gap-14 mx-20 my-10 max-sm:mx-[5%] max-sm:my-5 max-sm:text-center">
       <div className="flex w-full h-fit justify-between">
         <div className="w-[60%] max-sm:w-full ">
           <div className="w-full t text-4xl py-5 text-white max-md:text-3xl">
@@ -94,7 +94,7 @@ const About = () => {
         <div className="text-4xl text-white text-center max-md:text-3xl">
           Professional <HighlightText>SkillSet</HighlightText>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-0 mt-10">
+        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-0 mt-10 max-md:mt-5">
           {skillImages.map((image, index) => (
             <SkillCard key={index} image={image} />
           ))}
@@ -104,7 +104,7 @@ const About = () => {
         <div className="text-4xl text-white text-center max-md:text-3xl">
           <HighlightText>Tools</HighlightText> I use
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-0 mt-10">
+        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-0 mt-10 max-md:mt-5">
           {toolImages.map((image, index) => (
             <SkillCard key={index} image={image} />
           ))}
@@ -114,7 +114,7 @@ const About = () => {
         <div className="text-4xl text-white text-center max-md:text-3xl">
           My <HighlightText>Achievements</HighlightText>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-5 mt-10">
+        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-5 mt-10 max-md:mt-5">
           <a href={Codeflix} target="_blank" rel="noopener noreferrer">
             <AchievementCard title={"CODEFLIX-5.0"} image={Codeflix}>
               Secured <HighlightText>1st place</HighlightText> in a coding
