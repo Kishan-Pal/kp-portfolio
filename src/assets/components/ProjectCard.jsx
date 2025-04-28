@@ -24,7 +24,7 @@ const ProjectCard = ({
       <div className="flex justify-center items-center gap-5 mt-auto mb-0">
         <button
           className={
-            `flex gap-1 items-center justify-center bg-[var(--imp-text-color)] text-white text-sm px-4 py-2 rounded-lg hover:bg-[var(--imp-text-color)]/80 transition duration-300 ease-in-out cursor-pointer` +
+            `flex gap-1 w-full max-w-[100px] items-center justify-center bg-[var(--imp-text-color)] text-white text-sm px-4 py-2 rounded-lg hover:bg-[var(--imp-text-color)]/80 transition duration-300 ease-in-out cursor-pointer` +
             (isGithub ? "" : " hidden")
           }
           onClick={() => {
@@ -36,7 +36,7 @@ const ProjectCard = ({
         </button>
         <button
           className={
-            `flex gap-1 items-center justify-center bg-[var(--imp-text-color)] text-white text-sm px-4 py-2 rounded-lg hover:bg-[var(--imp-text-color)]/80 transition duration-300 ease-in-out cursor-pointer` +
+            `flex gap-1 w-full max-w-[100px] items-center justify-center bg-[var(--imp-text-color)] text-white text-sm px-4 py-2 rounded-lg hover:bg-[var(--imp-text-color)]/80 transition duration-300 ease-in-out cursor-pointer` +
             (isDemo ? "" : " hidden")
           }
           onClick={() => {

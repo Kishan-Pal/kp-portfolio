@@ -49,8 +49,9 @@ const Projects = () => {
           title={"JOYFLICK"}
           image={JoyFlick}
           isGithub={true}
-          isDemo={false}
+          isDemo={true}
           github={"https://github.com/Kishan-Pal/Joyflick_js"}
+          demo={"https://joyflick.vercel.app"}
         >
           Built an interactive website featuring a collection of mini-games and
           visual experiments. Included a Color Fill Game powered by BFS
